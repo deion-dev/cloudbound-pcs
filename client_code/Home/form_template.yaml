@@ -1,4 +1,8 @@
 components:
+- layout_properties: {slot: top-left-btn}
+  name: image_2
+  properties: {display_mode: shrink_to_fit, height: 40, source: _/theme/kumoai_v1.png}
+  type: Image
 - components:
   - layout_properties: {grid_position: 'WCCWOY,HCBNPM'}
     name: label_1
@@ -8,16 +12,98 @@ components:
     name: image_1
     properties: {display_mode: original_size, source: _/theme/9070.jpg}
     type: Image
+  - layout_properties: {grid_position: 'HBXFYQ,DTWNQU'}
+    name: spacer_1
+    properties: {height: 32}
+    type: Spacer
   - data_bindings: []
     event_bindings: {}
     layout_properties: {grid_position: 'YEUGRF,OCCQCT'}
     name: view_desktops
     properties: {background: 'theme:Primary 500', font: '', font_size: 18, role: primary-color, text: Desktops}
     type: Button
-  - layout_properties: {grid_position: 'VHALNJ,PWIAOP'}
-    name: repeating_panel_1
-    properties: {foreground: 'theme:Primary 500', item_template: Home.ItemTemplate1}
-    type: RepeatingPanel
+  - layout_properties: {grid_position: 'WCNIGA,TQRPGQ UPACFH,ETIKJH'}
+    name: button_5
+    properties: {text: Specs}
+    type: Button
+  - layout_properties: {grid_position: 'WCNIGA,TQRPGQ EUUGLL,OUGOEF'}
+    name: image_3
+    properties: {source: _/theme/pc 1.jpg}
+    type: Image
+  - layout_properties: {grid_position: 'WCNIGA,TQRPGQ ZGJNKG,DBYLUM'}
+    name: text_box_1
+    properties: {align: center, text: Acer Nitro 60 Gaming PC}
+    type: TextBox
+  - layout_properties: {grid_position: 'WCNIGA,TQRPGQ RTKUMF,FRZAJO'}
+    name: button_3
+    properties: {text: Buy now}
+    type: Button
+  - layout_properties: {grid_position: 'WCNIGA,XKXRAU PZVANT,JZHSIA'}
+    name: button_5_copy
+    properties: {text: Specs}
+    type: Button
+  - layout_properties: {grid_position: 'WCNIGA,XKXRAU NLMTTH,DBXMXU'}
+    name: image_4
+    properties: {source: _/theme/pc 3.jpg}
+    type: Image
+  - layout_properties: {grid_position: 'WCNIGA,XKXRAU WGUMVM,SZAIUM'}
+    name: text_box_2
+    properties: {align: center, text: ASUS TUF Gaming T500 Gaming PC}
+    type: TextBox
+  - layout_properties: {grid_position: 'WCNIGA,XKXRAU PURCDE,WTWXKI'}
+    name: button_2
+    properties: {text: buy now}
+    type: Button
+  - layout_properties: {grid_position: 'WCNIGA,IMPHEZ CPCDGO,DEBXHP'}
+    name: button_5_copy_2
+    properties: {text: Specs}
+    type: Button
+  - layout_properties: {grid_position: 'WCNIGA,IMPHEZ YMOQPF,DIBNFV'}
+    name: image_5
+    properties: {source: _/theme/pc 4.jpg}
+    type: Image
+  - layout_properties: {grid_position: 'WCNIGA,IMPHEZ CWPGKG,PYLLEG'}
+    name: text_box_3
+    properties: {align: center, text: PowerSpec G757 Gaming PC}
+    type: TextBox
+  - layout_properties: {grid_position: 'WCNIGA,IMPHEZ XEKHVF,XDWSQW'}
+    name: button_1
+    properties: {text: buy now}
+    type: Button
+  - layout_properties: {grid_position: 'CYVXBQ,TOSESB'}
+    name: spacer_3
+    properties: {height: 32}
+    type: Spacer
+  - data_bindings: []
+    event_bindings: {}
+    layout_properties: {grid_position: 'JKRGSC,HKHZFW'}
+    name: view_pcparts
+    properties: {background: 'theme:Primary 500', font: '', font_size: 18, role: primary-color, text: PC Parts}
+    type: Button
+  - layout_properties: {grid_position: 'LAEJMG,EJMJSG EUHDKI,AKMPUW'}
+    name: image_6
+    properties: {source: _/theme/graphic card.png}
+    type: Image
+  - layout_properties: {grid_position: 'LAEJMG,EJMJSG WLTUQV,PRKDOQ'}
+    name: button_1_copy
+    properties: {text: graphic card}
+    type: Button
+  - layout_properties: {grid_position: 'LAEJMG,ABIQTD SNDMTN,MYYKOT'}
+    name: image_7
+    properties: {source: _/theme/CPU.png}
+    type: Image
+  - layout_properties: {grid_position: 'LAEJMG,ABIQTD BDGUJW,VYFHEK'}
+    name: button_1_copy_3
+    properties: {text: Cpu}
+    type: Button
+  - layout_properties: {grid_position: 'LAEJMG,PMPJHR QTCXXH,AARDEF'}
+    name: image_8
+    properties: {source: _/theme/ram.png}
+    type: Image
+  - layout_properties: {grid_position: 'LAEJMG,PMPJHR HGQOJI,ZCYOCT'}
+    name: button_1_copy_2
+    properties: {text: RAM}
+    type: Button
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
@@ -37,12 +123,8 @@ components:
   type: FlowPanel
 - layout_properties: {slot: title}
   name: link_1
-  properties: {text: CloudBound PC's}
+  properties: {align: left, text: CloudBound PC's}
   type: Link
-- layout_properties: {slot: top-left-btn}
-  name: image_2
-  properties: {display_mode: shrink_to_fit, height: 40, source: _/theme/kumoai_v1.png}
-  type: Image
 - components:
   - layout_properties: {}
     name: link_5

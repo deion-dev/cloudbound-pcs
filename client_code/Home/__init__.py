@@ -1,6 +1,5 @@
 from ._anvil_designer import HomeTemplate
 from anvil import *
-from ..Home import Home
 
 class Home(HomeTemplate):
   def __init__(self, **properties):

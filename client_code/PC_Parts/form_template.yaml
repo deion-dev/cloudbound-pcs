@@ -1,47 +1,58 @@
 components:
 - components:
-  - layout_properties: {grid_position: 'WDGMDK,JLQVCO'}
-    name: card_1
-    properties: {role: card}
-    type: ColumnPanel
-  - components:
-    - layout_properties: {grid_position: 'QMDVUD,PWRRQM'}
-      name: label_1
-      properties: {text: PC 1}
-      type: Label
-    layout_properties: {grid_position: 'NHHEZD,OUOYHV'}
-    name: column_panel_1
+  - layout_properties: {}
+    name: link_2
     properties: {}
-    type: ColumnPanel
-  - layout_properties: {grid_position: 'UKZWIE,DHGWDS'}
-    name: image_2
-    properties: {source: _/theme/graphic card.png}
-    type: Image
-  - components:
-    - layout_properties: {width: 477, x: 99.05000305175781, y: 0}
-      name: image_4
-      properties: {source: _/theme/graphic card.png}
-      type: Image
-    - layout_properties: {width: 970, x: 0, y: 0}
-      name: image_1
-      properties: {source: _/theme/ssd.png}
-      type: Image
-    - layout_properties: {width: 477, x: 469.0500030517578, y: 0}
-      name: image_3
-      properties: {source: _/theme/CPU.png}
-      type: Image
-    layout_properties: {grid_position: 'UKZWIE,GYCFFX'}
-    name: xy_panel_1
-    properties: {height: 100}
-    type: XYPanel
-  layout_properties: {slot: default}
-  name: content_panel
-  properties: {}
-  type: ColumnPanel
-- layout_properties: {slot: nav-right}
+    type: Link
+  - layout_properties: {}
+    name: link_3
+    properties: {}
+    type: Link
+  layout_properties: {slot: nav-right}
   name: navbar_links
   properties: {}
   type: FlowPanel
+- layout_properties: {slot: title}
+  name: link_1
+  properties: {}
+  type: Link
+- components:
+  - layout_properties: {col_xs: 5, row: RKQRWA, width_xs: 2}
+    name: headline_1
+    properties: {align: center, role: headline, text: CPU}
+    type: Label
+  - layout_properties: {col_xs: 0, row: UBYDZG, width_xs: 2}
+    name: image_3
+    properties: {}
+    type: Image
+  - layout_properties: {col_xs: 2, row: UBYDZG, width_xs: 2}
+    name: image_1
+    properties: {}
+    type: Image
+  - layout_properties: {col_xs: 4, row: UBYDZG, width_xs: 2}
+    name: image_2
+    properties: {}
+    type: Image
+  - layout_properties: {col_xs: 6, row: UBYDZG, width_xs: 2}
+    name: image_4
+    properties: {}
+    type: Image
+  - layout_properties: {col_xs: 8, row: UBYDZG, width_xs: 2}
+    name: image_5
+    properties: {}
+    type: Image
+  - layout_properties: {col_xs: 10, row: UBYDZG, width_xs: 2}
+    name: image_6
+    properties: {}
+    type: Image
+  - layout_properties: {col_xs: 6, row: BNPFVA, width_xs: 2}
+    name: headline_2
+    properties: {role: headline}
+    type: Label
+  layout_properties: {slot: left-nav}
+  name: grid_panel_1
+  properties: {}
+  type: GridPanel
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate

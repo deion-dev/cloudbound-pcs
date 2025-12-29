@@ -1,0 +1,7 @@
+components:
+- layout_properties: {grid_position: 'NMNMSZ,KNBSZQ'}
+  name: checkout
+  properties: {display_mode: original_size, source: _/theme/Checkout.png}
+  type: Image
+container: {type: ColumnPanel}
+is_package: true

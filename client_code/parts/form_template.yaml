@@ -1,0 +1,157 @@
+components:
+- layout_properties: {grid_position: 'YIVYQR,RUQMWQ'}
+  name: headline_1
+  properties: {align: center, role: headline, text: CPU}
+  type: Label
+- components:
+  - layout_properties: {col_xs: 0, row: QNGVCU, width_xs: 3}
+    name: image_1
+    properties: {source: _/theme/7600x.jpg}
+    type: Image
+  - layout_properties: {col_xs: 4, row: QNGVCU, width_xs: 3}
+    name: image_2
+    properties: {source: _/theme/7600.jpg}
+    type: Image
+  - layout_properties: {col_xs: 8, row: QNGVCU, width_xs: 3}
+    name: image_3
+    properties: {source: _/theme/9800.jpg}
+    type: Image
+  - layout_properties: {col_xs: 0, row: YRPIRZ, width_xs: 3}
+    name: text_box_1
+    properties: {align: center, text: AMD Ryzen 5 7600X}
+    type: TextBox
+  - layout_properties: {col_xs: 4, row: YRPIRZ, width_xs: 3}
+    name: text_box_2
+    properties: {align: center, text: AMD Ryzen 7 7800X3D}
+    type: TextBox
+  - layout_properties: {col_xs: 8, row: YRPIRZ, width_xs: 3}
+    name: text_box_3
+    properties: {align: center, text: AMD Ryzen 7 9800X3D}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: FQCFGM, width_xs: 3}
+    name: button_5
+    properties: {text: BUY NOW}
+    type: Button
+  - layout_properties: {col_xs: 4, row: FQCFGM, width_xs: 3}
+    name: button_4
+    properties: {text: BUY NOW}
+    type: Button
+  - layout_properties: {col_xs: 8, row: FQCFGM, width_xs: 3}
+    name: button_3
+    properties: {text: BUY NOW}
+    type: Button
+  - layout_properties: {col_xs: 0, row: PSDFFY, width_xs: 3}
+    name: image_4
+    properties: {source: _/theme/i5-12600kf.jpg}
+    type: Image
+  - layout_properties: {col_xs: 4, row: PSDFFY, width_xs: 3}
+    name: image_5
+    properties: {source: _/theme/i7-12700k.jpg}
+    type: Image
+  - layout_properties: {col_xs: 8, row: PSDFFY, width_xs: 3}
+    name: image_6
+    properties: {source: _/theme/i7-14700k.jpg}
+    type: Image
+  - layout_properties: {col_xs: 0, row: NSNPWK, width_xs: 3}
+    name: text_box_6
+    properties: {align: center, text: Intel Core i5-12600KF}
+    type: TextBox
+  - layout_properties: {col_xs: 4, row: NSNPWK, width_xs: 3}
+    name: text_box_5
+    properties: {align: center, text: Intel Core i7-12700K}
+    type: TextBox
+  - layout_properties: {col_xs: 8, row: NSNPWK, width_xs: 3}
+    name: text_box_4
+    properties: {align: center, text: ' Intel Core i7-14700K'}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: QFOMID, width_xs: 3}
+    name: button_2
+    properties: {text: button_2}
+    type: Button
+  - layout_properties: {col_xs: 4, row: QFOMID, width_xs: 3}
+    name: button_1
+    properties: {text: button_1}
+    type: Button
+  - layout_properties: {col_xs: 8, row: QFOMID, width_xs: 3}
+    name: link_1
+    properties: {}
+    type: Link
+  layout_properties: {grid_position: 'SZEJGW,PFLRHS'}
+  name: grid_panel_1
+  properties: {}
+  type: GridPanel
+- layout_properties: {grid_position: 'TARSCH,BEJGSU'}
+  name: headline_2
+  properties: {role: headline, text: GRAPHIC CARD}
+  type: Label
+- components:
+  - layout_properties: {col_xs: 0, row: CLJDUP, width_xs: 3}
+    name: image_12
+    properties: {source: _/theme/7600gpu.jpg, visible: true}
+    type: Image
+  - layout_properties: {col_xs: 4, row: CLJDUP, width_xs: 3}
+    name: image_11
+    properties: {source: _/theme/9060.jpg}
+    type: Image
+  - layout_properties: {col_xs: 8, row: CLJDUP, width_xs: 3}
+    name: image_9
+    properties: {source: _/theme/9070xt.jpg}
+    type: Image
+  - layout_properties: {col_xs: 0, row: CEWIDE, width_xs: 3}
+    name: text_box_7
+    properties: {align: center, text: AMD Radeon RX 6700 XT}
+    type: TextBox
+  - layout_properties: {col_xs: 4, row: CEWIDE, width_xs: 3}
+    name: text_box_8
+    properties: {align: center, text: AMD Radeon RX 9060 XT}
+    type: TextBox
+  - layout_properties: {col_xs: 8, row: CEWIDE, width_xs: 3}
+    name: text_box_9
+    properties: {align: center, text: AMD Radeon RX 9070 XT}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: EVYWNW, width_xs: 3}
+    name: image_7
+    properties: {source: _/theme/xtx.jpg}
+    type: Image
+  - layout_properties: {col_xs: 4, row: EVYWNW, width_xs: 3}
+    name: image_8
+    properties: {source: _/theme/5060.jpg}
+    type: Image
+  - layout_properties: {col_xs: 8, row: EVYWNW, width_xs: 3}
+    name: image_10
+    properties: {source: _/theme/5070.jpg}
+    type: Image
+  - layout_properties: {col_xs: 0, row: NCJXLD, width_xs: 3}
+    name: text_box_12
+    properties: {align: center, text: AMD Radeon RX 7900XTX}
+    type: TextBox
+  - layout_properties: {col_xs: 4, row: NCJXLD, width_xs: 3}
+    name: text_box_11
+    properties: {align: center, text: 'NVIDIA GeForce RTX 5060 Ti '}
+    type: TextBox
+  - layout_properties: {col_xs: 8, row: NCJXLD, width_xs: 3}
+    name: text_box_10
+    properties: {align: center, text: NVIDIA GeForce RTX 5070}
+    type: TextBox
+  layout_properties: {grid_position: 'IQZCWN,DMBMPB'}
+  name: grid_panel_2
+  properties: {}
+  type: GridPanel
+- layout_properties: {grid_position: 'MFLORT,MQLWDW'}
+  name: headline_3
+  properties: {role: headline, text: RAM}
+  type: Label
+- layout_properties: {grid_position: 'QGXQAM,OSYDRD'}
+  name: grid_panel_3
+  properties: {}
+  type: GridPanel
+- layout_properties: {grid_position: 'YNAHHF,RDXQGY'}
+  name: headline_4
+  properties: {role: headline, text: SSD}
+  type: Label
+- layout_properties: {grid_position: 'LCOTNE,GNAUPQ'}
+  name: grid_panel_4
+  properties: {}
+  type: GridPanel
+container: {type: ColumnPanel}
+is_package: true

@@ -40,6 +40,7 @@ db_schema:
       type: simpleObject
     server: full
     title: Users
+metadata: {logo_img: 'asset:kumoai_v1-logo.png'}
 name: CloudBound PC's
 package_name: CloudBound_PC_s
 runtime_options:

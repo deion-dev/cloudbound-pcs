@@ -1,6 +1,16 @@
 from ._anvil_designer import HomeTemplate
 from anvil import *
-from ..Checkout.ItemTemplate2 import ItemTemplate2
+import anvil.facebook.auth
+import anvil.google.auth, anvil.google.drive
+from anvil.google.drive import app_files
+import anvil.tables as tables
+import anvil.tables.query as q
+from anvil.tables import app_tables
+import anvil.users
+from ..parts import parts
+from ..desktops import desktops
+
+
 class Home(HomeTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -44,19 +54,60 @@ class Home(HomeTemplate):
     c = confirm("Buy Now?")
     pass
 
-  @handle("button_5", "click")
-  def button_5_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    
-    pass
 
-  @handle("link_6", "click")
-  def link_6_click(self, **event_args):
+
+  @handle("view_pcparts", "click")
+  def view_pcparts_click(self, **properties):
     """This method is called when the link is clicked"""
-    
+    self.content_panel.clear() 
+    self.init_components(**properties)
+    self.content_panel.add_component(parts())
     pass
-    
 
+
+  @handle("link_1", "click")
+  def link_1_click(self, **properties):
+    """This method is called when the link is clicked"""
+    self.content_panel.clear()
+    self.init_components(**properties)
+    self.content_panel.add_component(Home())
+    pass
+
+  @handle("view_desktops", "click")
+  def view_desktops_click(self, **properties):
+    """This method is called when the button is clicked"""
+    self.content_panel.clear()
+    self.init_components(**properties)
+    self.content_panel.add_component(desktops())
+   
+    pass
+
+  @handle("link_2", "click")
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    anvil.users.login_with_form()
+    pass
+
+  @handle("text_box_4", "pressed_enter")
+  def text_box_4_pressed_enter(self, **properties):
+    """This method is called when the user presses Enter in this text box"""
+    self.items = [{'name': 'CPU', 'category': 'PCpart'},{'name':'Graphic Card', 'category': 'PCparts'}]
+    self.update_search_results(self.items)
+
+    def text_box_4_click(self, **event_args):
+      search_term = self.search_bar.text.lower()
+      filtered_items = [item for item in self.items if search_term in item['name'].lower()]
+      self.update_search_results(filtered_items)
+      def update_search_results(self, filtered_items):
+        """Update the RepeatingPanel with filtered items"""
+        self.results_panel.items = filtered_items
+        
+      
+      
+    pass
+
+
+      
   
 
 

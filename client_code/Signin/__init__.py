@@ -1,8 +1,8 @@
-from ._anvil_designer import DesktopsTemplate
+from ._anvil_designer import SigninTemplate
 from anvil import *
 
 
-class Desktops(DesktopsTemplate):
+class Signin(SigninTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

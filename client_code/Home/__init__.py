@@ -13,3 +13,4 @@ class Home(HomeTemplate):
     c = confirm("Add to cart?")
     pass
 alert("Welcome to CloudBound PCs")
+

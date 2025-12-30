@@ -44,7 +44,7 @@ components:
     type: TextBox
   - event_bindings: {}
     layout_properties: {grid_position: 'WCNIGA,TQRPGQ RTKUMF,MSREHV'}
-    name: button_4
+    name: addcart1
     properties: {text: ADD TO CART}
     type: Button
   - event_bindings: {}
@@ -64,7 +64,8 @@ components:
     name: text_box_2
     properties: {align: center, text: ASUS TUF Gaming T500 Gaming PC}
     type: TextBox
-  - layout_properties: {grid_position: 'WCNIGA,XKXRAU PURCDE,ZOGFRY'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'WCNIGA,XKXRAU PURCDE,ZOGFRY'}
     name: button_6
     properties: {text: ADD TO CART}
     type: Button

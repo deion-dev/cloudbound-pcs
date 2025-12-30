@@ -1,6 +1,6 @@
 from ._anvil_designer import HomeTemplate
 from anvil import *
-
+from anvile_extras import popover
 class Home(HomeTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -13,11 +13,9 @@ class Home(HomeTemplate):
     c = confirm("Add to cart?")
     pass
 
-  @handle("button_4", "click")
-  def button_4_click(self, **event_args):
-    """This method is called when the button is clicked"""
-   c = confirm("add to cart?")
-    pass
+  self.button = button_3_click()
+  self.button.popover(content='example text', title=)
+
 
 alert("Welcome to CloudBound PCs")
 

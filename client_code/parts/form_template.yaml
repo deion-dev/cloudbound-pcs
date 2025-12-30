@@ -21,7 +21,8 @@ components:
     name: button_2
     properties: {text: Add to cart}
     type: Button
-  - layout_properties: {grid_position: 'UFSIHN,MMFHEP PBAFOV,EJMNRM'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,MMFHEP PBAFOV,EJMNRM'}
     name: button_5
     properties: {text: BUY NOW}
     type: Button
@@ -41,11 +42,13 @@ components:
     name: text_box_6
     properties: {align: center, text: Intel Core i5-12600KF}
     type: TextBox
-  - layout_properties: {grid_position: 'UFSIHN,MMFHEP SIGHGK,WZHRNS'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,MMFHEP SIGHGK,WZHRNS'}
     name: button_7
     properties: {text: Add to cart}
     type: Button
-  - layout_properties: {grid_position: 'UFSIHN,MMFHEP SIGHGK,FTZNVA'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,MMFHEP SIGHGK,FTZNVA'}
     name: button_8
     properties: {text: buy now}
     type: Button
@@ -61,11 +64,13 @@ components:
     name: text_box_18
     properties: {align: center, text: AMD Ryzen 7 7800X3D}
     type: TextBox
-  - layout_properties: {grid_position: 'UFSIHN,FTCGLA LKEIXG,OQIYUM'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,FTCGLA LKEIXG,OQIYUM'}
     name: button_1
     properties: {text: add to cart}
     type: Button
-  - layout_properties: {grid_position: 'UFSIHN,FTCGLA LKEIXG,YASYZW'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,FTCGLA LKEIXG,YASYZW'}
     name: button_4
     properties: {text: BUY NOW}
     type: Button
@@ -85,11 +90,13 @@ components:
     name: text_box_5
     properties: {align: center, text: Intel Core i7-12700K}
     type: TextBox
-  - layout_properties: {grid_position: 'UFSIHN,FTCGLA HGXYLB,DQZFNO'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,FTCGLA HGXYLB,DQZFNO'}
     name: button_9
     properties: {text: add to cart}
     type: Button
-  - layout_properties: {grid_position: 'UFSIHN,FTCGLA HGXYLB,PVGZKB'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,FTCGLA HGXYLB,PVGZKB'}
     name: button_10
     properties: {text: buy now}
     type: Button
@@ -107,11 +114,13 @@ components:
     type: TextBox
   - data_bindings:
     - {code: 'self.item['''']', property: spacing, writeback: false}
+    event_bindings: {}
     layout_properties: {grid_position: 'UFSIHN,XLGPVQ MSMGLU,AJAVQB'}
     name: button_6
     properties: {text: add to cart}
     type: Button
-  - layout_properties: {grid_position: 'UFSIHN,XLGPVQ MSMGLU,KUJNIY'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,XLGPVQ MSMGLU,KUJNIY'}
     name: button_3
     properties: {text: BUY NOW}
     type: Button
@@ -131,11 +140,13 @@ components:
     name: text_box_4
     properties: {align: center, text: ' Intel Core i7-14700K'}
     type: TextBox
-  - layout_properties: {grid_position: 'UFSIHN,XLGPVQ CTAAPV,PVHDZM'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,XLGPVQ CTAAPV,PVHDZM'}
     name: button_12
     properties: {text: add to cart}
     type: Button
-  - layout_properties: {grid_position: 'UFSIHN,XLGPVQ CTAAPV,QMEUJX'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'UFSIHN,XLGPVQ CTAAPV,QMEUJX'}
     name: button_11
     properties: {text: buy now}
     type: Button
@@ -163,11 +174,13 @@ components:
   name: text_box_7
   properties: {align: center, text: AMD Radeon RX 6700 XT}
   type: TextBox
-- layout_properties: {grid_position: 'ZYATGX,UBKNQK LCTVVM,TWGNIT'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,UBKNQK LCTVVM,TWGNIT'}
   name: button_26
   properties: {text: add to cart}
   type: Button
-- layout_properties: {grid_position: 'ZYATGX,UBKNQK LCTVVM,ZJDTQJ'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,UBKNQK LCTVVM,ZJDTQJ'}
   name: button_27
   properties: {text: buy now}
   type: Button
@@ -187,11 +200,13 @@ components:
   name: text_box_12
   properties: {align: center, text: AMD Radeon RX 7900XTX}
   type: TextBox
-- layout_properties: {grid_position: 'ZYATGX,UBKNQK CDTYOZ,EAUQXM'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,UBKNQK CDTYOZ,EAUQXM'}
   name: button_35
   properties: {text: add to cart}
   type: Button
-- layout_properties: {grid_position: 'ZYATGX,UBKNQK CDTYOZ,OCWXAU'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,UBKNQK CDTYOZ,OCWXAU'}
   name: button_36
   properties: {text: buy now}
   type: Button
@@ -207,11 +222,13 @@ components:
   name: text_box_8
   properties: {align: center, text: AMD Radeon RX 9060 XT}
   type: TextBox
-- layout_properties: {grid_position: 'ZYATGX,YIEEPH NBJITB,SQKOHM'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,YIEEPH NBJITB,SQKOHM'}
   name: button_24
   properties: {text: add to cart}
   type: Button
-- layout_properties: {grid_position: 'ZYATGX,YIEEPH NBJITB,SQZPOT'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,YIEEPH NBJITB,SQZPOT'}
   name: button_25
   properties: {text: buy now}
   type: Button
@@ -231,11 +248,13 @@ components:
   name: text_box_11
   properties: {align: center, text: 'NVIDIA GeForce RTX 5060 Ti '}
   type: TextBox
-- layout_properties: {grid_position: 'ZYATGX,YIEEPH SOOATS,DLIMTC'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,YIEEPH SOOATS,DLIMTC'}
   name: button_33
   properties: {text: add to cart}
   type: Button
-- layout_properties: {grid_position: 'ZYATGX,YIEEPH SOOATS,AETSZU'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,YIEEPH SOOATS,AETSZU'}
   name: button_34
   properties: {text: buy now}
   type: Button
@@ -251,11 +270,13 @@ components:
   name: text_box_9
   properties: {align: center, text: AMD Radeon RX 9070 XT}
   type: TextBox
-- layout_properties: {grid_position: 'ZYATGX,IPMKFF RLUCAK,VQFMIQ'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,IPMKFF RLUCAK,VQFMIQ'}
   name: button_22
   properties: {text: add to cart}
   type: Button
-- layout_properties: {grid_position: 'ZYATGX,IPMKFF RLUCAK,JQISMK'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,IPMKFF RLUCAK,JQISMK'}
   name: button_23
   properties: {text: but now}
   type: Button
@@ -275,11 +296,13 @@ components:
   name: text_box_10
   properties: {align: center, text: NVIDIA GeForce RTX 5070}
   type: TextBox
-- layout_properties: {grid_position: 'ZYATGX,IPMKFF XPCMMZ,JPZDIM'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,IPMKFF XPCMMZ,JPZDIM'}
   name: button_31
   properties: {text: add to cart}
   type: Button
-- layout_properties: {grid_position: 'ZYATGX,IPMKFF XPCMMZ,YXFMSP'}
+- event_bindings: {}
+  layout_properties: {grid_position: 'ZYATGX,IPMKFF XPCMMZ,YXFMSP'}
   name: button_32
   properties: {text: buy now}
   type: Button
@@ -304,11 +327,13 @@ components:
     name: text_box_14
     properties: {align: center, text: '3200MHz (2x16GB) DDR4 '}
     type: TextBox
-  - layout_properties: {grid_position: 'QIEGZK,BCLMFT IQBIXY,APZDXZ'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'QIEGZK,BCLMFT IQBIXY,APZDXZ'}
     name: button_37
     properties: {text: add to cart}
     type: Button
-  - layout_properties: {grid_position: 'QIEGZK,BCLMFT IQBIXY,PDFVVQ'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'QIEGZK,BCLMFT IQBIXY,PDFVVQ'}
     name: button_39
     properties: {text: buy now}
     type: Button
@@ -324,11 +349,13 @@ components:
     name: text_box_15
     properties: {align: center, text: G.Skill Flare X5(1x16GB)DDR5}
     type: TextBox
-  - layout_properties: {grid_position: 'QIEGZK,PLIFLP WVUBWT,XYVGRR'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'QIEGZK,PLIFLP WVUBWT,XYVGRR'}
     name: button_40
     properties: {text: add to cart}
     type: Button
-  - layout_properties: {grid_position: 'QIEGZK,PLIFLP WVUBWT,PDPXTE'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'QIEGZK,PLIFLP WVUBWT,PDPXTE'}
     name: button_41
     properties: {text: buy now}
     type: Button
@@ -344,11 +371,13 @@ components:
     name: text_box_13
     properties: {align: center, text: G.Skill FlareX5(2x16GB)DDR5}
     type: TextBox
-  - layout_properties: {grid_position: 'QIEGZK,MFITNZ XZNTKG,NCEEEB'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'QIEGZK,MFITNZ XZNTKG,NCEEEB'}
     name: button_42
     properties: {text: add to cart}
     type: Button
-  - layout_properties: {grid_position: 'QIEGZK,MFITNZ XZNTKG,AYJLVD'}
+  - event_bindings: {}
+    layout_properties: {grid_position: 'QIEGZK,MFITNZ XZNTKG,AYJLVD'}
     name: button_43
     properties: {text: buy now}
     type: Button

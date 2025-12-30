@@ -12,5 +12,12 @@ class Home(HomeTemplate):
     """This method is called when the button is clicked"""
     c = confirm("Add to cart?")
     pass
+
+  @handle("button_4", "click")
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+   c = confirm("add to cart?")
+    pass
+
 alert("Welcome to CloudBound PCs")
 

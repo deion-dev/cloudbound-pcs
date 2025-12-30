@@ -1,0 +1,141 @@
+components:
+- layout_properties: {grid_position: 'YIVYQR,RUQMWQ'}
+  name: headline_1
+  properties: {align: center, role: headline, text: AMD Desktops Computers}
+  type: Label
+- components:
+  - layout_properties: {col_xs: 0, row: SGBNIQ, width_xs: 3}
+    name: button_9
+    properties: {text: SPECS}
+    type: Button
+  - layout_properties: {col_xs: 4, row: SGBNIQ, width_xs: 3}
+    name: button_8
+    properties: {text: specs}
+    type: Button
+  - layout_properties: {col_xs: 8, row: SGBNIQ, width_xs: 3}
+    name: button_7
+    properties: {text: specs}
+    type: Button
+  - layout_properties: {col_xs: 0, row: QNGVCU, width_xs: 3}
+    name: image_1
+    properties: {source: _/theme/1.jpg}
+    type: Image
+  - layout_properties: {col_xs: 4, row: QNGVCU, width_xs: 3}
+    name: image_2
+    properties: {source: _/theme/2.jpg}
+    type: Image
+  - layout_properties: {col_xs: 8, row: QNGVCU, width_xs: 3}
+    name: image_3
+    properties: {source: _/theme/3.jpg}
+    type: Image
+  - layout_properties: {col_xs: 0, row: YRPIRZ, width_xs: 3}
+    name: text_box_1
+    properties: {align: center, text: PowerSpec G528 Gaming PC}
+    type: TextBox
+  - layout_properties: {col_xs: 4, row: YRPIRZ, width_xs: 3}
+    name: text_box_2
+    properties: {align: center, text: PowerSpec G729 Gaming PC}
+    type: TextBox
+  - layout_properties: {col_xs: 8, row: YRPIRZ, width_xs: 3}
+    name: text_box_3
+    properties: {align: center, text: PowerSpec G757 Gaming PC}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: FQCFGM, width_xs: 3}
+    name: button_5
+    properties: {text: add to cart}
+    type: Button
+  - layout_properties: {col_xs: 4, row: FQCFGM, width_xs: 3}
+    name: button_4
+    properties: {text: add to cart}
+    type: Button
+  - layout_properties: {col_xs: 8, row: FQCFGM, width_xs: 3}
+    name: button_3
+    properties: {text: add to cart}
+    type: Button
+  - layout_properties: {col_xs: 0, row: NBVHMW, width_xs: 3}
+    name: button_1
+    properties: {text: buy now}
+    type: Button
+  - layout_properties: {col_xs: 4, row: NBVHMW, width_xs: 3}
+    name: button_2
+    properties: {text: buy now}
+    type: Button
+  - layout_properties: {col_xs: 8, row: NBVHMW, width_xs: 3}
+    name: button_6
+    properties: {text: buy now}
+    type: Button
+  layout_properties: {grid_position: 'SZEJGW,PFLRHS'}
+  name: grid_panel_1
+  properties: {}
+  type: GridPanel
+- layout_properties: {grid_position: 'TARSCH,BEJGSU'}
+  name: headline_2
+  properties: {align: center, role: headline, text: Intel Desktops}
+  type: Label
+- components:
+  - layout_properties: {col_xs: 0, row: ASEIZV, width_xs: 3}
+    name: button_12
+    properties: {text: SPECS}
+    type: Button
+  - layout_properties: {col_xs: 4, row: ASEIZV, width_xs: 3}
+    name: button_11
+    properties: {text: Specs}
+    type: Button
+  - layout_properties: {col_xs: 8, row: ASEIZV, width_xs: 3}
+    name: button_10
+    properties: {text: specs}
+    type: Button
+  - layout_properties: {col_xs: 0, row: CLJDUP, width_xs: 3}
+    name: image_12
+    properties: {source: _/theme/intel pc 1.jpg, visible: true}
+    type: Image
+  - layout_properties: {col_xs: 4, row: CLJDUP, width_xs: 3}
+    name: image_11
+    properties: {source: _/theme/intel pc 2.jpg}
+    type: Image
+  - layout_properties: {col_xs: 8, row: CLJDUP, width_xs: 3}
+    name: image_9
+    properties: {source: _/theme/intel pc 3.jpg}
+    type: Image
+  - layout_properties: {col_xs: 0, row: CEWIDE, width_xs: 3}
+    name: text_box_7
+    properties: {align: center, text: ASUS TUF Gaming T500 PC}
+    type: TextBox
+  - layout_properties: {col_xs: 4, row: CEWIDE, width_xs: 3}
+    name: text_box_8
+    properties: {align: center, text: Xtreme GXi4600M PC}
+    type: TextBox
+  - layout_properties: {col_xs: 8, row: CEWIDE, width_xs: 3}
+    name: text_box_9
+    properties: {align: center, text: PowerSpec G451 Gaming PC}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: UXDHLT, width_xs: 3}
+    name: button_13
+    properties: {text: add to cart}
+    type: Button
+  - layout_properties: {col_xs: 4, row: UXDHLT, width_xs: 3}
+    name: button_15
+    properties: {text: add to cart}
+    type: Button
+  - layout_properties: {col_xs: 8, row: UXDHLT, width_xs: 3}
+    name: button_17
+    properties: {text: add to cart}
+    type: Button
+  - layout_properties: {col_xs: 0, row: JQXOXU, width_xs: 3}
+    name: button_14
+    properties: {text: buy now}
+    type: Button
+  - layout_properties: {col_xs: 4, row: JQXOXU, width_xs: 3}
+    name: button_16
+    properties: {text: buy now}
+    type: Button
+  - layout_properties: {col_xs: 8, row: JQXOXU, width_xs: 3}
+    name: button_18
+    properties: {text: buy now}
+    type: Button
+  layout_properties: {grid_position: 'IQZCWN,DMBMPB'}
+  name: grid_panel_2
+  properties: {}
+  type: GridPanel
+container: {type: ColumnPanel}
+is_package: true

@@ -1,8 +1,4 @@
 components:
-- layout_properties: {slot: top-left-btn}
-  name: image_2
-  properties: {display_mode: shrink_to_fit, height: 40, source: _/theme/kumoai_v1.png}
-  type: Image
 - components:
   - event_bindings: {}
     layout_properties: {grid_position: 'YJXMPQ,UVWHZP'}
@@ -141,6 +137,10 @@ components:
   properties: {}
   type: ColumnPanel
 - components:
+  - layout_properties: {}
+    name: image_2
+    properties: {display_mode: shrink_to_fit, height: 40, horizontal_align: left, source: _/theme/kumoai_v1.png, vertical_align: bottom}
+    type: Image
   - event_bindings: {}
     layout_properties: {}
     name: link_2
@@ -155,7 +155,8 @@ components:
   name: navbar_links
   properties: {}
   type: FlowPanel
-- event_bindings: {}
+- components: []
+  event_bindings: {}
   layout_properties: {slot: title}
   name: link_1
   properties: {align: left, text: CloudBound PC's}

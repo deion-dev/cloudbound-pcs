@@ -15,82 +15,8 @@ class Home(HomeTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    # Any code you write here will run before the form opens.
 
-  @handle("button_3", "click")
-  def button_3_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    c = confirm("Buy Now?")
-    pass
-
-
-  @handle("addcart1", "click")
-  def addcart1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    c = confirm("Add to cart?")
-    pass
-
-  @handle("button_6", "click")
-  def button_6_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    c = confirm("Add to cart?")
-    pass
-
-  @handle("button_2", "click")
-  def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    c = confirm("Buy Now?")
-    pass
-
-  @handle("button_7", "click")
-  def button_7_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    c = confirm("Add to cart?")
-    pass
-
-  @handle("button_1", "click")
-  def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    c = confirm("Buy Now?")
-    pass
-
-
-
-  @handle("view_pcparts", "click")
-  def view_pcparts_click(self, **properties):
-    """This method is called when the link is clicked"""
-    self.content_panel.clear() 
-    self.init_components(**properties)
-    self.content_panel.add_component(parts())
-    pass
-
-
-  @handle("link_1", "click")
-  def link_1_click(self, **properties):
-    """This method is called when the link is clicked"""
-    self.content_panel.clear()
-    self.init_components(**properties)
-    self.content_panel.add_component(Home())
-    pass
-
-  @handle("view_desktops", "click")
-  def view_desktops_click(self, **properties):
-    """This method is called when the button is clicked"""
-    self.content_panel.clear()
-    self.init_components(**properties)
-    self.content_panel.add_component(desktops())
-   
-    pass
-
-  @handle("link_2", "click")
-  def link_2_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    anvil.users.login_with_form()
-    pass
-
-  @handle("text_box_4", "pressed_enter")
-  def text_box_4_pressed_enter(self, **properties):
-    """This method is called when the user presses Enter in this text box"""
+    # Example list of items (replace with actual data)
     self.items = [
       {'name': 'CPU', 'category': 'PCpart'},
       {'name': 'Graphic Card', 'category': 'PCparts'},
@@ -98,27 +24,111 @@ class Home(HomeTemplate):
       {'name': 'Monitor', 'category': 'PCparts'}
     ]
 
-    @handle("text_box_4", "pressed_enter")
-    def text_box_4_pressed_enter(self, **event_args):
-      """This method is called when the user presses Enter in this text box"""
-      search_term = self.text_box_4.text.lower()
-      filtered_items = [item for item in self.items if search_term in item['name'].lower()]
-      self.update_search_results(filtered_items)
+    # Initialize the RepeatingPanel (results_panel)
+    self.results_panel.items = self.items  # Display all items initially
 
-    def update_search_results(self, filtered_items):
-      """Update the RepeatingPanel with filtered items"""
-      self.results_panel.items = filtered_items
-      
-      
+    # Button click event handlers
+  @handle("button_3", "click")
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    confirm("Buy Now?")
+
+  @handle("addcart1", "click")
+  def addcart1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    confirm("Add to cart?")
+
+  @handle("button_6", "click")
+  def button_6_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    confirm("Add to cart?")
+
+  @handle("button_2", "click")
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    confirm("Buy Now?")
+
+  @handle("button_7", "click")
+  def button_7_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    confirm("Add to cart?")
+
+  @handle("button_1", "click")
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    confirm("Buy Now?")
+
+    # Content panel switching
+  @handle("view_pcparts", "click")
+  def view_pcparts_click(self, **properties):
+    """This method is called when the link is clicked"""
+    self.content_panel.clear() 
+    self.content_panel.add_component(parts())  # Load parts component
+
+  @handle("link_1", "click")
+  def link_1_click(self, **properties):
+    """This method is called when the link is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(Home())  # Load the Home component
+
+  @handle("view_desktops", "click")
+  def view_desktops_click(self, **properties):
+    """This method is called when the button is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(desktops())  # Load desktops component
+
+  @handle("link_2", "click")
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    anvil.users.login_with_form()  # Trigger login form
+
+    # Search Bar functionality
+  @handle("text_box_4", "pressed_enter")
+  def text_box_4_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in the search box"""
+    search_term = self.text_box_4.text.lower()  # Get the search term
+    filtered_items = [item for item in self.items if search_term in item['name'].lower()]
+    self.update_search_results(filtered_items)
+
+  def update_search_results(self, filtered_items):
+    """Update the RepeatingPanel with filtered items"""
+    self.results_panel.items = filtered_items  # Update the items property of the RepeatingPanel
+
+  @handle("GPU_button", "click")
+  def GPU_button_click(self, **event_args):
+    """This method is called when the GPU button is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(parts())  # Load parts component (possibly for GPU selection)
+
+  @handle("CPU_Button", "click")
+  def CPU_Button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(parts())  # Load parts component (possibly for GPU selection)
+
+  @handle("RAM_Button", "click")
+  def RAM_Button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(parts())  # Load parts component (possibly for GPU selection)
+
+  @handle("spec_1", "click")
+  def spec_1_click(self, **event_args):
+    """This method is called when spec_1 is clicked"""
+    alert("You clicked on spec_1. Here are the details of the specification...")
+
+  @handle("spec_2", "click")
+  def spec_2_click(self, **event_args):
+    """This method is called when spec_2 is clicked"""
+    alert("You clicked on spec_2. Here are the details of the specification...")
+
+  @handle("spec_3", "click")
+  def spec_3_click(self, **event_args):
+    """This method is called when spec_3 is clicked"""
+    alert("You clicked on spec_3. Here are the details of the specification...")
+
+  @handle("Spec_1", "click")
+  def Spec_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
     pass
-
-
-      
-  
-
-
-
- 
-
-alert("Welcome to CloudBound PCs")
 

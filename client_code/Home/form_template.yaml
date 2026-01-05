@@ -6,7 +6,7 @@ components:
     properties: {placeholder: Search, text: ''}
     type: TextBox
   - layout_properties: {grid_position: 'GIEJDF,UTHOEM'}
-    name: repeating_panel_1
+    name: results_panel
     properties: {item_template: Home.ItemTemplate1}
     type: RepeatingPanel
   - layout_properties: {grid_position: 'WCCWOY,HCBNPM'}
@@ -29,7 +29,7 @@ components:
     type: Button
   - event_bindings: {}
     layout_properties: {grid_position: 'WCNIGA,TQRPGQ UPACFH,ETIKJH'}
-    name: button_5
+    name: Spec_1
     properties: {text: Specs}
     type: Button
   - layout_properties: {grid_position: 'WCNIGA,TQRPGQ EUUGLL,OUGOEF'}
@@ -50,8 +50,9 @@ components:
     name: button_3
     properties: {text: Buy now}
     type: Button
-  - layout_properties: {grid_position: 'WCNIGA,XKXRAU PZVANT,JZHSIA'}
-    name: button_5_copy
+  - event_bindings: {}
+    layout_properties: {grid_position: 'WCNIGA,XKXRAU PZVANT,JZHSIA'}
+    name: Spec_2
     properties: {text: Specs}
     type: Button
   - layout_properties: {grid_position: 'WCNIGA,XKXRAU NLMTTH,DBXMXU'}
@@ -72,8 +73,9 @@ components:
     name: button_2
     properties: {text: buy now}
     type: Button
-  - layout_properties: {grid_position: 'WCNIGA,IMPHEZ CPCDGO,DEBXHP'}
-    name: button_5_copy_2
+  - event_bindings: {}
+    layout_properties: {grid_position: 'WCNIGA,IMPHEZ CPCDGO,DEBXHP'}
+    name: Spec_3
     properties: {text: Specs}
     type: Button
   - layout_properties: {grid_position: 'WCNIGA,IMPHEZ YMOQPF,DIBNFV'}
@@ -108,24 +110,27 @@ components:
     name: image_6
     properties: {source: _/theme/graphic card.png}
     type: Image
-  - layout_properties: {grid_position: 'LAEJMG,EJMJSG WLTUQV,PRKDOQ'}
-    name: button_1_copy
+  - event_bindings: {}
+    layout_properties: {grid_position: 'LAEJMG,EJMJSG WLTUQV,PRKDOQ'}
+    name: GPU_button
     properties: {text: GPU/graphic cards}
     type: Button
   - layout_properties: {grid_position: 'LAEJMG,ABIQTD SNDMTN,MYYKOT'}
     name: image_7
     properties: {source: _/theme/CPU.png}
     type: Image
-  - layout_properties: {grid_position: 'LAEJMG,ABIQTD BDGUJW,VYFHEK'}
-    name: button_1_copy_3
+  - event_bindings: {}
+    layout_properties: {grid_position: 'LAEJMG,ABIQTD BDGUJW,VYFHEK'}
+    name: CPU_Button
     properties: {text: Cpu/processors}
     type: Button
   - layout_properties: {grid_position: 'LAEJMG,PMPJHR QTCXXH,AARDEF'}
     name: image_8
     properties: {source: _/theme/ram.png}
     type: Image
-  - layout_properties: {grid_position: 'LAEJMG,PMPJHR HGQOJI,ZCYOCT'}
-    name: button_1_copy_2
+  - event_bindings: {}
+    layout_properties: {grid_position: 'LAEJMG,PMPJHR HGQOJI,ZCYOCT'}
+    name: RAM_Button
     properties: {text: RAM}
     type: Button
   layout_properties: {slot: default}
@@ -158,24 +163,6 @@ components:
   name: link_1
   properties: {align: left, text: CloudBound PC's}
   type: Link
-- components:
-  - layout_properties: {}
-    name: link_5
-    properties: {text: Desktops}
-    type: Link
-  - event_bindings: {}
-    layout_properties: {}
-    name: link_6
-    properties: {text: PC Parts}
-    type: Link
-  - layout_properties: {}
-    name: link_7
-    properties: {text: Monitors}
-    type: Link
-  layout_properties: {slot: left-nav}
-  name: linear_panel_1
-  properties: {}
-  type: LinearPanel
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate

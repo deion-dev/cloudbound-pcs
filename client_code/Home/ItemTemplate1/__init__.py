@@ -10,8 +10,21 @@ from anvil.tables import app_tables
 
 
 class ItemTemplate1(ItemTemplate1Template):
-  def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
-    self.init_components(**properties)
+  def set_data(self, item):
+    """This method is called to set the data for each item in the repeating panel"""
 
-    # Any code you write here will run before the form opens.
+    # Set the 'name' and 'category' data for each item
+    self.item_name_label.text = item['name']  # Set name (e.g., '7800X3D')
+    self.item_category_label.text = item['category']  # Set category (e.g., 'CPU')
+
+    # You can further customize how to handle categories like CPU, GPU, RAM if needed
+    if item['category'] == 'CPU':
+      # You can change the styling or do something specific for CPU category
+      self.item_category_label.foreground = 'blue'  # Just an example, color the text blue for CPU
+
+    elif item['category'] == 'GPU':
+      self.item_category_label.foreground = 'green'  # Color the text green for GPU
+
+    elif item['category'] == 'RAM':
+      self.item_category_label.foreground = 'red'  # Color the text red for RAM
+

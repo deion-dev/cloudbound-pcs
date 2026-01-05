@@ -132,3 +132,18 @@ class Home(HomeTemplate):
     """This method is called when the button is clicked"""
     pass
 
+# Function to check if a number is prime
+def is_prime(n):
+  # Numbers less than 2 are not prime
+  if n <= 1:
+    return False
+    # Check divisibility from 2 to the square root of n
+  for i in range(2, int(n**0.5) + 1):
+    if n % i == 0:
+      return False  # If divisible, it's not a prime
+  return True  # Otherwise, it's a prime
+
+# Displaying prime numbers from 1 to 250
+for num in range(1, 251):
+  if is_prime(num):
+    print(num)

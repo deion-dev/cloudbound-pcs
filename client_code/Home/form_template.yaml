@@ -5,6 +5,10 @@ components:
     name: text_box_4
     properties: {placeholder: Search, text: ''}
     type: TextBox
+  - layout_properties: {grid_position: 'GIEJDF,UTHOEM'}
+    name: repeating_panel_1
+    properties: {item_template: Home.ItemTemplate1}
+    type: RepeatingPanel
   - layout_properties: {grid_position: 'WCCWOY,HCBNPM'}
     name: label_1
     properties: {align: center, bold: true, font_size: 18, text: Deals of the Week, underline: true}
@@ -138,10 +142,11 @@ components:
     name: link_2
     properties: {icon: 'fa:user-circle-o', text: Sign In}
     type: Link
-  - event_bindings: {}
+  - components: []
+    event_bindings: {}
     layout_properties: {}
     name: link_3
-    properties: {icon: 'fa:shopping-cart', text: Cart}
+    properties: {icon: 'fa:shopping-cart', text: cart_panel}
     type: Link
   layout_properties: {slot: nav-right}
   name: navbar_links
